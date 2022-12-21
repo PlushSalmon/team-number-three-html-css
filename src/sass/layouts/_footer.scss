@@ -1,3 +1,7 @@
+.footer-container {
+    padding-bottom: 0;
+}
+
 .first-footer-title {
     @include font (700, 18px, calc(22 / 18), null);
     text-transform: uppercase;
