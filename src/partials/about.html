@@ -1,89 +1,82 @@
- <!-- about -->
-    <section class="about" id="about">
-      <div class="conteiner">
-        <p class="about__txt1 subtitle">tradition and love</p>
-        <h2 class="about__title section-title">how it’s made?</h2>
-        <div class="cow-text-wrapper">
-          <picture>
-            <source
-              srcset="
-                ./images/about/cow-desk.jpeg 1x,
-                ./images/about/cow-desk-2x.jpeg 2x
-              "
-              media="(min-width:1200px)"
-            />
-            <source
-              srcset="
-                ./images/about/cow-tab.jpeg 1x,
-                ./images/about/cow-tab-2x.jpeg 2x
-              "
-              media="(min-width:768px)"
-            />
-            <source
-              srcset="
-                ./images/about/cow-mob.jpeg 1x,
-                ./images/about/cow-mob-2x.jpeg  2x
-              "
-              media="(min-width:320px)"
-            />
+<!-- about -->
+<section class="about" id="about">
+  <div class="conteiner">
+    <p class="about__txt1 subtitle">tradition and love</p>
+    <h2 class="about__title section-title">how it’s made?</h2>
+    <div class="cow-text-wrapper">
+      <picture>
+        <source
+          srcset="
+            ./images/about/cow-desk.jpeg    1x,
+            ./images/about/cow-desk-2x.jpeg 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/about/cow-tab.jpeg    1x,
+            ./images/about/cow-tab-2x.jpeg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/about/cow-mob.jpeg    1x,
+            ./images/about/cow-mob-2x.jpeg 2x
+          "
+          media="(min-width:320px)"
+        />
 
-            <img
-              class="cow-pic"
-              src="./images/about/cow-mob.jpeg"
-              alt="cow-mug"
-            />
-          </picture>
-          <div class="about-txt-wrapper">
-            <p class="about__txt2">
-              Ice is a place where you will become not only a little happier,
-              but also healthier. Health is the main value for us, and we follow
-              it when creating our handmade desserts.
-            </p>
-            <p class="about__txt3">
-              We use traditional recipes and 100% natural ingredients. Our
-              products are so natural that they can be given to children from
-              the age of three years. Sweets lovers can expect 55 types of ice
-              cream, 15 types of coffee and 23 milkshakes.
-            </p>
-            <p class="about__txt4">
-              This is enough to choose ice cream and coffee for any mood!
-            </p>
+        <img class="cow-pic" src="./images/about/cow-mob.jpeg" alt="cow-mug" />
+      </picture>
+      <div class="about-txt-wrapper">
+        <p class="about__txt2">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+        </p>
+        <p class="about__txt3">
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of
+          three years. Sweets lovers can expect 55 types of ice cream, 15 types
+          of coffee and 23 milkshakes.
+        </p>
+        <p class="about__txt4">
+          This is enough to choose ice cream and coffee for any mood!
+        </p>
 
-            <button type="button" class="about__btn btn700" open-btn>
-              Read more
-              <svg class="icon-arrow" width="12px" height="12px">
-                <use href="./images/about/sprite-about.svg#icon-arrow"></use>
+        <button type="button" class="about__btn btn700" open-btn>
+          Read more
+          <svg class="icon-arrow" width="12px" height="12px">
+            <use href="./images/about/sprite-about.svg#icon-right"></use>
+          </svg>
+        </button>
+        <!-- Modal -->
+        <div class="backdrop is-hidden">
+          <div class="about-modal is-hidden">
+            <button class="data-modal-close" type="button">
+              <svg class="icon-close" width="24px" height="24px">
+                <use href="./images/about/sprite-about.svg#icon-close"></use>
               </svg>
             </button>
-            <!-- Modal -->
-            <div class="backdrop is-hidden">
-              <div class="about-modal is-hidden">
-                <button class="data-modal-close" type="button">
-                  <svg class="icon-close" width="24px" height="24px">
-                    <use
-                      href="./images/about/sprite-about.svg#icon-close"
-                    ></use>
-                  </svg>
-                </button>
-                <h2 class="about__title section-title">How it’s made?</h2>
-                <video
-                  src=""
-                  poster=""
-                  width="448"
-                  controls
-                  autoplay
-                  loop
-                  preload="auto"
-                ></video>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et
-                </p>
-              </div>
-            </div>
+            <h2 class="about__title section-title">How it’s made?</h2>
+            <iframe
+              width="448"
+              src="https://www.youtube.com/embed/oDhHWW9J-fc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
