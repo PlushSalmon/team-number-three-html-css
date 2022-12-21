@@ -32,7 +32,7 @@
 
 .advantages__item {
   @include mobile {
-  width: 240px;
+    width: 240px;
   }
   @include tablet {
     @include calc(2, 80px);
