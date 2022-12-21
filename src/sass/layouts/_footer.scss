@@ -15,6 +15,9 @@
     text-align: left;
     margin-bottom: 16px;
     color: #FCFCFC;
+    @include tablet {
+        @include font (700, 26px, calc(32 / 26), 0.04em);
+    }
 }
 
 .second-footer-title {
@@ -23,6 +26,9 @@
     text-align: left;
     margin-bottom: 60px;
     color: #FCFCFC;
+    @include tablet {
+        @include font (700, 46px, calc(59 / 46), 0.06em)
+    }
 }
 
 .footer-soctel-wrap {
@@ -67,6 +73,9 @@
         text-align: right;
         color: #131313;
         margin-bottom: 40px;
+        @include tablet {
+            @include font (700, 14px, calc(26 / 14), null);
+        }
 }
 
 .footer-link-tel {
@@ -85,4 +94,7 @@ border-top: 1px solid #E1E1E1;
         @include font (700, 14px, calc(21 / 14), null);
         text-align: center;
         color: #7A7A7A;
+        @include tablet {
+            @include font (700, 14px, calc(26 / 14), 0.02em);
+        }
 }
