@@ -1,3 +1,15 @@
+.first-footer-title {
+    @include font (700, 18px, calc(22 / 18), null);
+    text-transform: uppercase;
+    text-align: left
+}
+
+.second-footer-title {
+    @include font (700, 34px, calc(41 / 34), 0.04em);
+    text-transform: uppercase;
+    text-align: left;
+}
+
 .soc-footer-list {
     display: flex;
     justify-content: right;
@@ -26,4 +38,20 @@
     .soc-footer-link:focus & {
         fill: #FCFCFC;
     }
+}
+
+.footer-tel {
+        @include font (700, 12px, calc(22 / 12), null);
+        text-align: right;
+        color: #131313;
+}
+
+.footer-link-tel {
+    color: #FCFCFC;
+}
+
+.footer-text-company {
+        @include font (700, 14px, calc(21 / 14), null);
+        text-align: center;
+        color: #7A7A7A;
 }
