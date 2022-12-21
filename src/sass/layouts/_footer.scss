@@ -106,7 +106,7 @@ border-top: 1px solid #E1E1E1;
         @include font (700, 14px, calc(21 / 14), null);
         text-align: center;
         color: #7A7A7A;
-        max-width: 280px;
+        max-width: 200px;
         @include tablet {
             @include font (700, 14px, calc(26 / 14), 0.02em);
         }
