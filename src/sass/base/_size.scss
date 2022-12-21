@@ -1,18 +1,24 @@
 .container {
     padding-right: 15px;
     padding-left: 15px;
+    width: 320px;
+    padding: 60px 20px;
     margin-left: auto;
     margin-right: auto;
 
+
     @include mobile {
+        padding: 60px 20px;
         width: 480px;
     }
 
     @include tablet {
+        padding: 60px 32px;
         width: 768px;
     }
 
     @include desctop {
+        padding: 60px 16px;
         width: 1200px;
     }
 }

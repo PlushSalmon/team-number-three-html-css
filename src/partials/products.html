@@ -1,1 +1,113 @@
-<p>products</p>
+<section class="product">
+    <div class="container">
+        <p class="label-h2">100% natural</p>
+        <h2 class="product-h2" id="product-title">products</h2>
+        <ul class="product-box">
+            <li class="product-item one">
+                <h3 class="product-h3">Ice cream</h3>
+                <p class="product-text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
+                    stabilizer</p>
+                <button type="button" class="product-btn" data-modal-open>
+                    <svg class="product-svg" width="40" height="16">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="product-item two">
+                <h3 class="product-h3">Ice coffee</h3>
+                <p class="product-text">Fragrant invigorating drink created from 100% natural ingredients without the
+                    use of preservatives and flavor enhancers</p>
+                <button type="button" class="product-btn">
+                    <svg class="product-svg" width="40" height="16">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="product-item three">
+                <h3 class="product-h3">Milkshakes</h3>
+                <p class="product-text">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits,
+                    berries and other sweets of your choice</p>
+                <button type="button" class="product-btn">
+                    <svg class="product-svg" width="40" height="16">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Modal window-->
+
+    <div class="backdrop is-hidden" data-modal="">
+        <div class="modal">
+            <button class="modal-btn-close" type="button" data-modal-close="">
+                <svg class="icon-close" width="24" height="24">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Chololate icecream</p>
+            <div class="modal-img-box">
+                <picture>
+                    <source srcset="
+                        ./images/modal/ice-cream-modal-mobile.png 1x,
+                        ./images/modal/ice-cream-modal-mobile-2x.png 2x" />
+                    <img src="./images/modal/ice-cream-modal-mobile.png" width="132" alt="Ice cream">
+                </picture>
+
+            </div>
+            <div class="consist">
+                <div class="consist-item">
+                    <p class="consist-number">320</p>
+                    <p class="consist-name">kcal</p>
+                </div>
+                <div class="consist-item">
+                    <p class="consist-number">4g</p>
+                    <p class="consist-name">Protein...</p>
+                </div>
+                <div class="consist-item">
+                    <p class="consist-number">8,2g</p>
+                    <p class="consist-name">Fats</p>
+                </div>
+                <div class="consist-item">
+                    <p class="consist-number">40,4g</p>
+                    <p class="consist-name">Carbs</p>
+                </div>
+            </div>
+            <table class="ingredients">
+                <caption>Ingredients</caption>
+                <tbody>
+                    <tr>
+                        <td class="ingredients-name">Milk</td>
+                        <td class="ingredients-count">100ml</td>
+                    </tr>
+                    <tr>
+                        <td class="ingredients-name">Belgian chocolate</td>
+                        <td class="ingredients-count">20g</td>
+                    </tr>
+                    <tr>
+                        <td class="ingredients-name">Cream</td>
+                        <td class="ingredients-count">150 ml</td>
+                    </tr>
+                    <tr>
+                        <td class="ingredients-name">Cocoa powder</td>
+                        <td class="ingredients-count">30g</td>
+                    </tr>
+                    <tr>
+                        <td class="ingredients-name">Sugar</td>
+                        <td class="ingredients-count">40g</td>
+                    </tr>
+                    <tr>
+                        <td class="ingredients-name">Vanilla sugar</td>
+                        <td class="ingredients-count">10g</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form>
+                <input type="text" name="user-name" class="modal-input" placeholder="Name">
+                <input type="tel" name="user-phone" class="modal-input" placeholder="Phone">
+                <textarea name="user-comments" class="modal-comments" placeholder="Comments"></textarea>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
