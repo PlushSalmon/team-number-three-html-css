@@ -33,6 +33,7 @@
     @include tablet {
         @include font (700, 46px, calc(59 / 46), 0.06em);
         margin-bottom: 32px;
+        max-width: 352px;
     }
 }
 
@@ -49,7 +50,7 @@
     margin-bottom: 20px;
     @include tablet {
         margin-top: 61px;
-        margin-bottom: 32px;
+        margin-bottom: 34px;
     }
 }
 
@@ -85,6 +86,7 @@
         @include tablet {
             @include font (700, 14px, calc(26 / 14), null);
             margin-bottom: 0;
+            min-width: 285px;
         }
 }
 
