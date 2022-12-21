@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   text-align: center;
   padding-bottom: 28px;
+  column-gap: 28px;
   @include tablet {
     display: flex;
     gap: 80;
@@ -30,6 +31,9 @@
 }
 
 .advantages__item {
+  @include mobile {
+    min-width: 240px;
+  }
   @include tablet {
     @include calc(2, 80px);
   }
@@ -43,6 +47,7 @@
   @include font(700, 36px, 1.22, 00.04em);
   color: #fcfcfc;
   margin-bottom: 16px;
+
   @include tablet {
     @include font(700, 48px, 1.22, 00.04em);
     margin-bottom: 12px;
@@ -57,12 +62,17 @@
   font-family: Montserrat;
   color: #fcfcfc;
   @include font(700, 12px, 1.66, 0.02em);
+  @include mobile {
+    padding: 0 20px;
+  }
 
   @include tablet {
     @include font(400, 14px, 1.71, 0.02em);
+    padding: 0;
   }
   @include desctop {
     @include font(400, 16px, 1.75, 0.02em);
+    padding: 0 20px;
   }
 }
 
