@@ -47,16 +47,19 @@
         @include font (700, 12px, calc(22 / 12), null);
         text-align: right;
         color: #131313;
+        margin-bottom: 40px;
 }
 
 .footer-link-tel {
     color: #FCFCFC;
 }
 
-.footer-line {
-    width: 100%;
-    size: 1px;
-    color: #E1E1E1;
+.footer-company-container {
+border-top: 1px solid #E1E1E1;
+}
+
+.footer-company {
+    padding-top: 20px;
 }
 
 .footer-text-company {
