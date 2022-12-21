@@ -1,6 +1,7 @@
 .soc-footer-list {
     display: flex;
     justify-content: right;
+    gap: 20px;
 }
 
 .soc-footer-item {
@@ -21,8 +22,8 @@
 .soc-footer-icon {
     fill: #84A178;
 
-    .soc-footer-link &,
-    .soc-footer-link & {
+    .soc-footer-link:hover &,
+    .soc-footer-link:focus & {
         fill: #FCFCFC;
     }
 }
