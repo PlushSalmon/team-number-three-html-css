@@ -1,0 +1,28 @@
+.soc-footer-list {
+    display: flex;
+    justify-content: right;
+}
+
+.soc-footer-item {
+    width: 34px;
+    height: 34px;
+}
+
+.soc-footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #F8D24E;
+    border-radius: 50%;
+}
+
+.soc-footer-icon {
+    fill: #84A178;
+
+    .soc-footer-link &,
+    .soc-footer-link & {
+        fill: #FCFCFC;
+    }
+}
