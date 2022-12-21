@@ -1,10 +1,46 @@
 .about {
   padding-top: 60px;
   background-color: #84a178;
+  &__txt1 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-family: 'Montserrat';
+    @include font(700, 18px, 1.22, 0.04em);
+    text-transform: uppercase;
+    color: #fcfcfc;
+  }
+  &__title {
+    @include font(400, 30px, 1.26, 0.04em);
+    text-transform: uppercase;
+    color: #fcfcfc;
+    text-align: center;
+    margin-bottom: 32px;
+    font-family: Seymour One, sans-serif;
+  }
+}
+
+.about__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 42px;
+  border-radius: 10px;
+  padding: 0;
+  border: none;
+  background-color: #f8d24e;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+}
+.btn700 {
+  @include font(600, 14px, 1.28, normal);
 }
 
 .pic {
   display: block;
+  margin: auto;
+  margin-bottom: 40px;
   width: 279px;
   height: 278px;
   padding-top: 22px;

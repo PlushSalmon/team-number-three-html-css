@@ -43,7 +43,7 @@
 }
 
 .advantages__pre-title {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   @include font(700, 36px, 1.22, 00.04em);
   color: #fcfcfc;
   margin-bottom: 16px;
@@ -59,7 +59,7 @@
 }
 
 .advantages__title {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   color: #fcfcfc;
   @include font(700, 12px, 1.66, 0.02em);
   @include mobile {
