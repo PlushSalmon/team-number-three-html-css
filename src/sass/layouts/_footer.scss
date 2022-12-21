@@ -51,6 +51,7 @@
     @include tablet {
         margin-top: 61px;
         margin-bottom: 34px;
+        gap: 30px;
     }
 }
 
@@ -80,6 +81,7 @@
 
 .footer-tel {
         @include font (700, 12px, calc(22 / 12), null);
+        font-family: 'Montserrat' sans-serif;
         text-align: right;
         color: #131313;
         margin-bottom: 40px;
