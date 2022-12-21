@@ -31,7 +31,7 @@
     margin-bottom: 60px;
     color: #FCFCFC;
     @include tablet {
-        @include font (700, 46px, calc(59 / 46), 0.06em);
+        @include font (700, 48px, calc(59 / 48), 0.06em);
         margin-bottom: 32px;
         max-width: 352px;
     }
@@ -100,6 +100,9 @@ border-top: 1px solid #E1E1E1;
 
 .footer-company {
     padding: 20px;
+    @include tablet {
+        padding: 12px;
+    }
 }
 
 .footer-text-company {
