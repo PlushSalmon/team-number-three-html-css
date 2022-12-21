@@ -1,58 +1,60 @@
 <!-- about -->
-<section class="about" id="about">
-  <div class="container">
-    <p class="about__txt1 subtitle">tradition and love</p>
-    <h2 class="about__title section-title">how it’s made?</h2>
+<section class="about text--white" id="about">
+  <div class="container-fluid">
+    <p class="about__subtitle text--uppercase">tradition and love</p>
+    <h2 class="about__title text--uppercase font--serif">how it’s made?</h2>
 
-    <div class="pic">
-      <picture>
-        <source
-          srcset="
-            ./images/about/cow-desk.png    1x,
-            ./images/about/cow-desk-2x.png 2x
-          "
-          media="(min-width:1200px)"
-        />
-        <source
-          srcset="
-            ./images/about/cow-tab.png    1x,
-            ./images/about/cow-tab-2x.png 2x
-          "
-          media="(min-width:768px)"
-        />
-        <source
-          srcset="
-            ./images/about/cow-mob.png    1x,
-            ./images/about/cow-mob-2x.png 2x
-          "
-          media="(min-width:320px)"
-        />
+    <div class="about__content">
+      <div class="pic">
+        <picture>
+          <source
+            srcset="
+              ./images/about/cow-desk.png    1x,
+              ./images/about/cow-desk-2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/about/cow-tab.png    1x,
+              ./images/about/cow-tab-2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/about/cow-mob.png    1x,
+              ./images/about/cow-mob-2x.png 2x
+            "
+            media="(min-width:320px)"
+          />
 
-        <img class="cow-pic" src="./images/about/cow-mob.png" alt="cow-mug" />
-      </picture>
-    </div>
-    <div class="about-txt-wrapper">
-      <p class="about__txt2">
-        Ice is a place where you will become not only a little happier, but also
-        healthier. Health is the main value for us, and we follow it when
-        creating our handmade desserts.
-      </p>
-      <p class="about__txt3">
-        We use traditional recipes and 100% natural ingredients. Our products
-        are so natural that they can be given to children from the age of three
-        years. Sweets lovers can expect 55 types of ice cream, 15 types of
-        coffee and 23 milkshakes.
-      </p>
-      <p class="about__txt4">
-        This is enough to choose ice cream and coffee for any mood!
-      </p>
+          <img class="cow-pic" src="./images/about/cow-mob.png" alt="cow-mug" />
+        </picture>
+      </div>
+      <div class="about__content-text-wrapper">
+        <div class="about__content-text">
+          <p>
+            Ice is a place where you will become not only a little happier, but
+            also healthier. Health is the main value for us, and we follow it
+            when creating our handmade desserts.
+          </p>
+          <p>
+            We use traditional recipes and 100% natural ingredients. Our
+            products are so natural that they can be given to children from the
+            age of three years. Sweets lovers can expect 55 types of ice cream,
+            15 types of coffee and 23 milkshakes.
+          </p>
+          <p>This is enough to choose ice cream and coffee for any mood!</p>
+        </div>
 
-      <button type="button" class="about__btn btn700" open-btn>
-        Read more
-        <svg class="icon-arrow" width="12px" height="12px">
-          <use href="./images/about/sprite-about.svg#icon-right"></use>
-        </svg>
-      </button>
+        <button type="button" class="btn" open-btn>
+          Read more
+          <svg class="icon-arrow" width="12px" height="12px">
+            <use href="./images/about/sprite-about.svg#icon-right"></use>
+          </svg>
+        </button>
+      </div>
       <!-- Modal -->
       <!-- <div class="backdrop is-hidden">
           <div class="about-modal is-hidden">

@@ -1,157 +1,76 @@
 .advantages {
-  padding-top: 50px;
   padding-bottom: 64px;
-  background-color: #84a178;
-  @include tablet {
-    padding-top: 60px;
-    padding-bottom: 204px;
-  }
-  @include desctop {
-    padding-top: 60px;
-    padding-bottom: 178px;
-  }
+  background-color: $color-grean-light;
 }
 
 .advantages__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  gap: 28px;
   text-align: center;
-  padding-bottom: 28px;
-  column-gap: 28px;
-  @include tablet {
-    display: flex;
-    gap: 80;
-    flex-wrap: nowrap;
+  font-weight: 700;
+  line-height: 1.7;
+  font-size: 12px;
+  &-title {
+    margin-bottom: 16px;
+    font-size: 36px;
+    text-transform: uppercase;
   }
-
-  @include desctop {
-    gap: 32;
-    flex-wrap: nowrap;
-  }
-}
-
-.advantages__item {
-  @include mobile {
-    width: 240px;
-  }
-  @include tablet {
-    @include calc(2, 80px);
-  }
-  @include desctop {
-    @include calc(2, 32px);
+  &-description {
+    max-width: 230px;
+    margin: 0 auto;
   }
 }
-
-.advantages__pre-title {
-  font-family: 'Montserrat';
-  @include font(700, 36px, 1.22, 00.04em);
-  color: #fcfcfc;
+.icon {
+  display: inline-flex;
   margin-bottom: 16px;
-
-  @include tablet {
-    @include font(700, 48px, 1.22, 00.04em);
-    margin-bottom: 12px;
-  }
-  @include desctop {
-    @include font(700, 58px, 1.22, 0.04em);
-    margin-bottom: 12px;
-  }
-}
-
-.advantages__title {
-  font-family: 'Montserrat';
-  color: #fcfcfc;
-  @include font(700, 12px, 1.66, 0.02em);
-  @include mobile {
-    padding: 0 20px;
-  }
-
-  @include tablet {
-    @include font(400, 14px, 1.71, 0.02em);
-    padding: 0;
-  }
-  @include desctop {
-    @include font(400, 16px, 1.75, 0.02em);
-    padding: 0 20px;
-  }
-}
-
-.icon1::before {
-  display: block;
-  margin-bottom: 16px;
-  content: '';
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 999px;
+  background-color: $color-warning;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  &--cow {
+    background-image: url(../images/about/cow.png);
+  }
+  &--weight {
+    background-image: url(../images/about/weight.png);
+  }
+  &--ice-crema {
+    background-image: url(../images/about/ice-crema.png);
+  }
+}
 
-  background: center no-repeat url(../images/about/cow.png) #f8d24e;
-  border-radius: 50%;
-  @media screen and (min-width: 768px) {
+@include tablet {
+  .advantages {
+    padding-bottom: 204px;
+    &__list {
+      grid-template-columns: repeat(3, 152px);
+      font-size: 14px;
+      &-title {
+        font-size: 48px;
+      }
+    }
+  }
+  .icon {
     margin-bottom: 32px;
   }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
-  }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .icon1::before {
-    background-image: url(../images/about/cow-2x.png);
-  }
 }
 
-.icon2::before {
-  display: block;
-  margin-bottom: 16px;
-  content: '';
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-
-  background: center no-repeat url(../images/about/weight.png) #f8d24e;
-  border-radius: 50%;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
+@include desctop {
+  .advantages {
+    padding-bottom: 178px;
+    &__list {
+      font-size: 16px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      &-title {
+        font-size: 58px;
+      }
+    }
   }
-  @media screen and (min-width: 1280px) {
+  .icon {
     margin-bottom: 40px;
-  }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .icon2::before {
-    background-image: url(../images/about/weight-2x.png);
-  }
-}
-.icon3::before {
-  display: block;
-  margin-bottom: 16px;
-  content: '';
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-
-  background: center no-repeat url(../images/about/ice-crema.png) #f8d24e;
-  border-radius: 50%;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
-  }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .icon3::before {
-    background-image: url(../images/about/ice-crema-2x.png);
   }
 }

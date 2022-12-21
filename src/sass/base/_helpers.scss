@@ -1,0 +1,17 @@
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--white {
+  color: $color-white;
+}
+
+.font--serif {
+  font-family: 'Seymour One', sans-serif;
+}
+
+.container-fluid {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 100%;
+}
