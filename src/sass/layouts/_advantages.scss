@@ -1,0 +1,147 @@
+.advantages {
+  padding-top: 50px;
+  padding-bottom: 64px;
+  background-color: #84a178;
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 204px;
+  }
+  @include desctop {
+    padding-top: 60px;
+    padding-bottom: 178px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 28px;
+  @include tablet {
+    display: flex;
+    gap: 80;
+    flex-wrap: nowrap;
+  }
+
+  @include desctop {
+    gap: 32;
+    flex-wrap: nowrap;
+  }
+}
+
+.advantages__item {
+  @include tablet {
+    @include calc(2, 80px);
+  }
+  @include desctop {
+    @include calc(2, 32px);
+  }
+}
+
+.advantages__pre-title {
+  font-family: Montserrat;
+  @include font(700, 36px, 1.22, 00.04em);
+  color: #fcfcfc;
+  margin-bottom: 16px;
+  @include tablet {
+    @include font(700, 48px, 1.22, 00.04em);
+    margin-bottom: 12px;
+  }
+  @include desctop {
+    @include font(700, 58px, 1.22, 0.04em);
+    margin-bottom: 12px;
+  }
+}
+
+.advantages__title {
+  font-family: Montserrat;
+  color: #fcfcfc;
+  @include font(700, 12px, 1.66, 0.02em);
+
+  @include tablet {
+    @include font(400, 14px, 1.71, 0.02em);
+  }
+  @include desctop {
+    @include font(400, 16px, 1.75, 0.02em);
+  }
+}
+
+.icon1::before {
+  display: block;
+  margin-bottom: 16px;
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: center no-repeat url(../images/about/cow.png) #f8d24e;
+  border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .icon1::before {
+    background-image: url(../images/about/cow-2x.png);
+  }
+}
+
+.icon2::before {
+  display: block;
+  margin-bottom: 16px;
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: center no-repeat url(../images/about/weight.png) #f8d24e;
+  border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .icon2::before {
+    background-image: url(../images/about/weight-2x.png);
+  }
+}
+.icon3::before {
+  display: block;
+  margin-bottom: 16px;
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: center no-repeat url(../images/about/ice-crema.png) #f8d24e;
+  border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .icon3::before {
+    background-image: url(../images/about/ice-crema-2x.png);
+  }
+}
