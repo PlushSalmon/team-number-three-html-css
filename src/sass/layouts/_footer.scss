@@ -2,11 +2,19 @@
     padding-bottom: 0;
 }
 
+.footer-title-wrap {
+    @include tablet {
+        display: flex;
+        flex-direction: column
+    }
+}
+
 .first-footer-title {
     @include font (700, 18px, calc(22 / 18), null);
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 16px;
+    color: #FCFCFC;
 }
 
 .second-footer-title {
@@ -14,8 +22,15 @@
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 60px;
+    color: #FCFCFC;
 }
 
+.footer-soctel-wrap {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .soc-footer-list {
     display: flex;
     justify-content: right;
