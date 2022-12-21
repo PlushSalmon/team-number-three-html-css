@@ -20,7 +20,7 @@
     color: #FCFCFC;
     @include tablet {
         @include font (700, 26px, calc(32 / 26), 0.04em);
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
 }
 
@@ -106,6 +106,7 @@ border-top: 1px solid #E1E1E1;
         @include font (700, 14px, calc(21 / 14), null);
         text-align: center;
         color: #7A7A7A;
+        min-width: 280px;
         @include tablet {
             @include font (700, 14px, calc(26 / 14), 0.02em);
         }
