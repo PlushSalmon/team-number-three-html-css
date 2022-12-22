@@ -9,6 +9,7 @@
     background-color: #FCFCFC;
     border-radius: 24px;
     padding: 40px 32px 24px 32px;
+    @include calc(1, 16px)
     // padding-top: 40px;
     // padding-right: 32px;
     // padding-bottom: 24px;
