@@ -42,12 +42,15 @@
   position: absolute;
   @include mobile {
     width: 280px;
+    top: -32px;
   }
   @include tablet {
     width: 704px;
+    top: -144px;
   }
   @include desctop {
     width: 1013px;
+    top: -35px;
   }
 }
 
@@ -59,6 +62,14 @@
   border-radius: 50%;
   @include mobile {
     width: 85px;
+    margin-top: 178px;
+  }
+  @include tablet {
+    margin-top: 283px;
+  }
+
+  @include desctop {
+    margin-top: 464px;
   }
 }
 
