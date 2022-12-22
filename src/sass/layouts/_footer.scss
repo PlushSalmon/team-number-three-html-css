@@ -1,5 +1,8 @@
 .footer-container {
     padding-bottom: 0;
+    @include desctop {
+        padding-bottom: 60px;
+    }
 
     @include tablet {
         display: flex;
@@ -51,6 +54,8 @@
 
     @include desctop {
         @include font (700, 58px, calc(71 / 58), 0.06em);
+        min-width: 500px;
+        padding-bottom: 0px;
     }
 }
 
@@ -74,7 +79,7 @@
     }
 
     @include desctop {
-        margin-top: 0;
+        margin-top: 40px;
         margin-bottom: 0;
     }
 }
