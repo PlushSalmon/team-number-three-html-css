@@ -23,23 +23,19 @@
     @include desctop {
         height: 542px;
     }
-
-    // padding-top: 40px;
-    // padding-right: 32px;
-    // padding-bottom: 24px;
-    // padding-left: 32px;
-
 }
-
+.dicor-contacts-title {
+background-color: #F8D24E;
+border-radius: 6px;
+padding: 22px 4px;
+}
 .contacts-title {
     @include font (500, 12px, calc(14 / 12), 0.04em);
     text-align: center;
     align-items: center;
     text-transform: uppercase;
     color: #131313;
-    background-color: #F8D24E;
-    width: 80px;
-    height: 22px;
+    
     margin-bottom: 20px;
 
     @include tablet {
