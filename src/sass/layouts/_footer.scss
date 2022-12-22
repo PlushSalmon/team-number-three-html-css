@@ -38,7 +38,7 @@
     margin-bottom: 60px;
     color: #FCFCFC;
     @include tablet {
-        @include font (700, 48px, calc(59 / 48), 0.06em);\
+        @include font (700, 48px, calc(59 / 48), 0.06em);
         margin-bottom: 32px;
         max-width: 352px;
     }
