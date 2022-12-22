@@ -138,6 +138,19 @@ section {
     font-size: 14px;
     line-height: calc(17 / 14);
 
+    &:hover {
+        background-color: #0A8817;
+    }
+
+    &:focus {
+        background-color: #0A8817;
+        color: #FCFCFC;
+    }
+
+    &:disabled {
+        background: #ABABAB;
+    }
+
     @include tablet {
         display: flex;
         align-items: center;
@@ -200,6 +213,13 @@ section {
     font-weight: 600;
     font-size: 12px;
     line-height: calc(15 / 12);
+
+    &:hover, &:focus {
+        border: 2px solid #0A8817;
+    }
+    &:disabled {
+        border: 2px solid #ABABAB;
+    }
 }
 
 .advantages-btn {
@@ -212,6 +232,18 @@ section {
     font-size: 12px;
     line-height: calc(15 / 12);
     text-decoration-line: underline;
+
+    &:hover {
+        color: #0A8817;
+    }
+
+    &:focus {
+        color: #FCFCFC;
+    }
+
+    &:disabled {
+        color: #ABABAB;
+    }
 }
 
 .hero__buttons {
@@ -393,6 +425,8 @@ section {
     }
 }
 
+
+
 .mob_menu {
     position: fixed;
     top: 0;
@@ -406,10 +440,17 @@ section {
     padding-left: 32px;
     padding-right: 32px;
 
+    
+
     &.is-hidden {
         transform: translate(-50%, -50%) scaleY(0);
     }
+
+
 }
+
+
+
 
 
 .modal-footer {
