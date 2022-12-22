@@ -3,11 +3,16 @@
 
   <div class="container container__banner">
     <h2 class="visually-hidden">Відгуки клієнтів</h2>
-    <ul class="slider-box">
+    <ul class="owl-carousel slider-box">
       <li><img class="review__image" src="./images/review/icecream-reviews-main.png" alt="icecream"></li>
       <li><img class="review__image" src="./images/review/icecream-reviews-main.png" alt="icecream"></li>
       <li><img class="review__image" src="./images/review/icecream-reviews-main.png" alt="icecream"></li>
     </ul>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+    </script>
   </div>
 
   <div class="container container__review">
