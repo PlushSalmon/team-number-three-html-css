@@ -4,10 +4,12 @@
     flex-wrap: wrap;
     justify-content: center;
     height: 412px;
+
     @include tablet {
         flex-wrap: nowrap;
         height: 537px;
     }
+
     @include desctop {
         height: 542px;
     }
@@ -17,7 +19,17 @@
     background-color: #FCFCFC;
     border-radius: 24px;
     padding: 40px 32px 24px 32px;
-    @include calc(1, 16px)
+    @include calc(1, 16px);
+    height: 412px;
+
+    @include tablet {
+        height: 537px;
+    }
+
+    @include desctop {
+        height: 542px;
+    }
+
     // padding-top: 40px;
     // padding-right: 32px;
     // padding-bottom: 24px;
@@ -30,37 +42,41 @@
     text-align: center;
     align-items: center;
     text-transform: uppercase;
-    color: #131313;;
+    color: #131313;
+    ;
     background-color: #F8D24E;
     width: 80px;
     height: 22px;
+
     @include tablet {
         @include font (500, 16px, calc(22 / 16), 0.04em);
     }
 }
 
 .contacts-city {
-@include font (500, 12px, calc(22 / 12), 0.04em);
+    @include font (500, 12px, calc(22 / 12), 0.04em);
     color: #131313;
-        @include tablet {
-                @include font (500, 14px, calc(26 / 14), 0.04em);
-            }
-        
-            @include desctop {
-                @include font (500, 16px, calc(30 / 16), 0.04em);
-            }
+
+    @include tablet {
+        @include font (500, 14px, calc(26 / 14), 0.04em);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(30 / 16), 0.04em);
+    }
 }
 
 .physical-adress {
-@include font (500, 12px, calc(22 / 12), 0.04em);
+    @include font (500, 12px, calc(22 / 12), 0.04em);
     color: #D6936D;
-        @include tablet {
-                @include font (500, 14px, calc(26 / 14), 0.04em);
-            }
-        
-            @include desctop {
-                @include font (500, 16px, calc(29 / 16), 0.04em);
-            }
+
+    @include tablet {
+        @include font (500, 14px, calc(26 / 14), 0.04em);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(29 / 16), 0.04em);
+    }
 }
 
 .border-day-time {
@@ -69,31 +85,33 @@
 }
 
 .contacts-day {
-@include font (500, 12px, calc(22 / 12), 0.04em);
+    @include font (500, 12px, calc(22 / 12), 0.04em);
     color: #131313;
-        @include tablet {
-                @include font (500, 14px, calc(26 / 14), null);
-            }
-        
-            @include desctop {
-                @include font (500, 16px, calc(30 / 16), 0.04em);
-            }
+
+    @include tablet {
+        @include font (500, 14px, calc(26 / 14), null);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(30 / 16), 0.04em);
+    }
 }
 
 .contacts-time {
-@include font (500, 12px, calc(22 / 12), null);
+    @include font (500, 12px, calc(22 / 12), null);
     color: #ABABAB;
-        @include tablet {
-                @include font (500, 14px, calc(26 / 14), null);
-            }
-        
-            @include desctop {
-                @include font (500, 16px, calc(30 / 16), null);
-            }
+
+    @include tablet {
+        @include font (500, 14px, calc(26 / 14), null);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(30 / 16), null);
+    }
 }
 
 .contacts-tel {
-@include font (500, 12px, calc(19 / 12), null);
+    @include font (500, 12px, calc(19 / 12), null);
     color: #131313;
 
     @include tablet {
@@ -106,13 +124,14 @@
 }
 
 .contacts-email {
-@include font (500, 12px, calc(19 / 12), null);
+    @include font (500, 12px, calc(19 / 12), null);
     color: #131313;
-        @include tablet {
-                @include font (500, 14px, calc(21 / 114), null);
-            }
-        
-            @include desctop {
-                @include font (500, 16px, calc(24 / 16), null);
-            }
+
+    @include tablet {
+        @include font (500, 14px, calc(21 / 114), null);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(24 / 16), null);
+    }
 }
