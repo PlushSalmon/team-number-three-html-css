@@ -1,3 +1,17 @@
+// -----Slider-----
+
+setInterval(() => {
+	let $curr = document.querySelector('#slider1 input[type=radio]:checked'),
+  		$next = $curr.nextSibling;
+      
+  if (!$next.length) {
+  	$next = document.querySelector('#slider1 input[type=radio]').firstChild;
+  }
+  $next.setAttribute('checked', true);
+}, 3000);
+
+// -----Slider-----
+
 // -----Modal Window-----
 
 (() => {
@@ -16,18 +30,3 @@
 })();
 
 // -----Modal Window-----
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-menu-open]"),
-    closeModalBtn: document.querySelector("[data-menu-close]"),
-    modal: document.querySelector("[data-menu]"),
-  };
-
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
