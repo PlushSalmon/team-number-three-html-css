@@ -3,6 +3,9 @@
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
+    @include tablet {
+        flex-wrap: nowrap;
+    }
 }
 
 .contacts-box-item {
