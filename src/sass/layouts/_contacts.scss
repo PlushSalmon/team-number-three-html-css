@@ -3,15 +3,9 @@
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
-    height: 412px;
 
     @include tablet {
         flex-wrap: nowrap;
-        height: 537px;
-    }
-
-    @include desctop {
-        height: 542px;
     }
 }
 
