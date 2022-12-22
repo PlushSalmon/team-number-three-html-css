@@ -17,7 +17,7 @@
         width: 768px;
     }
 
-    @include desktop {
+    @include desctop {
         padding: 60px 16px;
         width: 1200px;
     }
@@ -32,7 +32,7 @@
 //         padding-bottom: 60px;
 //     }
 
-//     @include desktop {
+//     @include desctop {
 //         padding-top: 94px;
 //         padding-bottom: 94px;
 //     }

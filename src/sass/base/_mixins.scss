@@ -23,17 +23,18 @@
   }
 }
 
-@mixin desktop {
+@mixin desctop {
   @media screen and (min-width: 1200px) {
     @content;
   }
 }
 
 @mixin retina {
+
   @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     @content;
   }
 }
