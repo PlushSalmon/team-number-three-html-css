@@ -102,7 +102,7 @@
         }
         @include desktop {
             @include font (700, 16px, calc(30 / 16), 0.02em);
-            margin-bottom: 60px;
+            margin-bottom: 0;
             margin-top: 40px;
         }
 }
