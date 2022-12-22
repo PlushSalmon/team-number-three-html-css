@@ -1,5 +1,11 @@
+.contacts-box-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
 .contacts-box-item {
-    background-color: #E1E1E1;
+    background-color: #FCFCFC;
     border-radius: 24px;
     padding: 40px 32px 24px 32px;
     // padding-top: 40px;
@@ -16,6 +22,8 @@
     text-transform: uppercase;
     color: #131313;;
     background-color: #F8D24E;
+    width: 80px;
+    height: 22px
 }
 
 .contacts-city {
@@ -26,6 +34,11 @@
 .physical-adress {
 @include font (500, 12px, calc(22 / 12), 0.04em);
     color: #D6936D;
+}
+
+.border-day-time {
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
 }
 
 .contacts-day {
