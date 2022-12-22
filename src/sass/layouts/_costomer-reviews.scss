@@ -30,15 +30,16 @@
   padding-right: 20px;
   max-width: 1200px;
   min-width: 320px;
+  position: relative;
 }
-
 
 .review__image {
   margin-bottom: 80px;
   align-items: center;
-  margin-top: -30px;
+  top: -32px;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
   @include mobile {
     width: 280px;
   }
