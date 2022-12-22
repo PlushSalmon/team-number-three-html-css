@@ -1,0 +1,2 @@
+setInterval((function(){var e=document.querySelector("#slider1 input[type=radio]:checked").nextSibling;e.length||(e=document.querySelector("#slider1 input[type=radio]").firstChild),e.setAttribute("checked",!0)}),3e3),function(){var e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function t(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",t),e.closeModalBtn.addEventListener("click",t)}();
+//# sourceMappingURL=index.a426e4a7.js.map
