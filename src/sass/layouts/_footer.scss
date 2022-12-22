@@ -44,13 +44,13 @@
 
     @include tablet {
         @include font (700, 48px, calc(59 / 48), 0.06em);
-        margin-bottom: 32px;
+        margin-bottom: 0;
+        padding-bottom: 32px;
         max-width: 352px;
     }
 
     @include desctop {
         @include font (700, 58px, calc(71 / 58), 0.06em);
-        margin-bottom: 0;
     }
 }
 
@@ -107,18 +107,17 @@
     @include font (700, 12px, calc(22 / 12), null);
     text-align: right;
     color: #131313;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 
     @include tablet {
         @include font (700, 14px, calc(26 / 14), null);
         min-width: 285px;
-        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     @include desctop {
         @include font (700, 16px, calc(30 / 16), 0.02em);
         margin-bottom: 0;
-        margin-top: 40px;
     }
 }
 
