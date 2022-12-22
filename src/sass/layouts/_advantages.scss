@@ -12,16 +12,19 @@
   font-weight: 700;
   line-height: 1.7;
   font-size: 12px;
+
   &-title {
     margin-bottom: 16px;
     font-size: 36px;
     text-transform: uppercase;
   }
+
   &-description {
     max-width: 230px;
     margin: 0 auto;
   }
 }
+
 .icon {
   display: inline-flex;
   margin-bottom: 16px;
@@ -31,12 +34,15 @@
   background-color: $color-warning;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+
   &--cow {
     background-image: url(../images/about/cow.png);
   }
+
   &--weight {
     background-image: url(../images/about/weight.png);
   }
+
   &--ice-crema {
     background-image: url(../images/about/ice-crema.png);
   }
@@ -45,31 +51,37 @@
 @include tablet {
   .advantages {
     padding-bottom: 204px;
+
     &__list {
       grid-template-columns: repeat(3, 152px);
       font-size: 14px;
+
       &-title {
         font-size: 48px;
       }
     }
   }
+
   .icon {
     margin-bottom: 32px;
   }
 }
 
-@include desctop {
+@include desktop {
   .advantages {
     padding-bottom: 178px;
+
     &__list {
       font-size: 16px;
       grid-template-columns: repeat(3, 1fr);
       gap: 32px;
+
       &-title {
         font-size: 58px;
       }
     }
   }
+
   .icon {
     margin-bottom: 40px;
   }

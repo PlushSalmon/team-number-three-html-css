@@ -3,6 +3,9 @@
     @include tablet {
         display: flex;
     }
+    @include desktop {
+        justify-content: space-between;
+    }
 }
 
 .footer-title-wrap {
@@ -21,10 +24,9 @@
     @include tablet {
         @include font (700, 26px, calc(32 / 26), 0.04em);
         margin-bottom: 8px;
-            // font-weight: 700;
-            // font-size: 26px;
-            // line-height: 32px;
-            // letter-spacing: 0.04em;
+    }
+    @include desktop {
+        @include font (400, 30px, calc(37 / 30), 0.04em);
     }
 }
 
@@ -36,12 +38,9 @@
     color: #FCFCFC;
     @include tablet {
         @include font (700, 48px, calc(59 / 48), 0.06em);
-        margin-bottom: 32px;
-        max-width: 352px;
-            // font-weight: 700;
-            // font-size: 48px;
-            // line-height: 59px;
-            // letter-spacing: 0.06em;
+    }
+    @include desktop {
+        @include font (700, 58px, calc(71 / 58), 0.06em);
     }
 }
 
@@ -94,11 +93,9 @@
         margin-bottom: 40px;
         @include tablet {
             @include font (700, 14px, calc(26 / 14), null);
-            margin-bottom: 0;
-            min-width: 285px;
-                // font-weight: 700;
-                // font-size: 14px;
-                // line-height: 26px;
+        }
+        @include desktop {
+            @include font (700, 16px, calc(30 / 16), 0.02em);
         }
 }
 
@@ -123,6 +120,9 @@ border-top: 1px solid #E1E1E1;
         color: #7A7A7A;
         @include tablet {
             @include font (700, 14px, calc(26 / 14), 0.02em);
+        }
+        @include desktop {
+            @include font (700, 12px, calc(22 / 12), 0.02em);
         }
 }
 
