@@ -43,10 +43,10 @@
     align-items: center;
     text-transform: uppercase;
     color: #131313;
-    ;
     background-color: #F8D24E;
     width: 80px;
     height: 22px;
+    margin-bottom: 20px;
 
     @include tablet {
         @include font (500, 16px, calc(22 / 16), 0.04em);
@@ -56,6 +56,7 @@
 .contacts-city {
     @include font (500, 12px, calc(22 / 12), 0.04em);
     color: #131313;
+    margin-bottom: 8px;
 
     @include tablet {
         @include font (500, 14px, calc(26 / 14), 0.04em);
@@ -69,6 +70,7 @@
 .physical-adress {
     @include font (500, 12px, calc(22 / 12), 0.04em);
     color: #D6936D;
+    margin-bottom: 24px;
 
     @include tablet {
         @include font (500, 14px, calc(26 / 14), 0.04em);
@@ -82,6 +84,8 @@
 .border-day-time {
     border-top: 1px solid #E1E1E1;
     border-bottom: 1px solid #E1E1E1;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .contacts-day {
@@ -100,6 +104,9 @@
 .contacts-time {
     @include font (500, 12px, calc(22 / 12), null);
     color: #ABABAB;
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
 
     @include tablet {
         @include font (500, 14px, calc(26 / 14), null);
@@ -113,6 +120,7 @@
 .contacts-tel {
     @include font (500, 12px, calc(19 / 12), null);
     color: #131313;
+    margin-top: 24px;
 
     @include tablet {
         @include font (500, 14px, calc(21 / 114), null);
@@ -126,6 +134,7 @@
 .contacts-email {
     @include font (500, 12px, calc(19 / 12), null);
     color: #131313;
+    margin-top: 6px;
 
     @include tablet {
         @include font (500, 14px, calc(21 / 114), null);
