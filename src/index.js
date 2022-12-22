@@ -26,4 +26,3 @@ setInterval(() => {
   }
   $next.setAttribute('checked', true);
 }, 3000);
-
