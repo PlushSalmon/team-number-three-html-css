@@ -1,0 +1,49 @@
+.contacts-box-item {
+    background-color: #E1E1E1;
+    border-radius: 24px;
+    padding: 40px 32px 24px 32px;
+    // padding-top: 40px;
+    // padding-right: 32px;
+    // padding-bottom: 24px;
+    // padding-left: 32px;
+
+}
+
+.contacts-title {
+    @include font (500, 12px, calc(14 / 12), 0.04em);
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #131313;;
+    background-color: #F8D24E;
+}
+
+.contacts-city {
+@include font (500, 12px, calc(22 / 12), 0.04em);
+    color: #131313;
+}
+
+.physical-adress {
+@include font (500, 12px, calc(22 / 12), 0.04em);
+    color: #D6936D;
+}
+
+.contacts-day {
+@include font (500, 12px, calc(22 / 12), 0.04em);
+    color: #131313;
+}
+
+.contacts-time {
+@include font (500, 12px, calc(22 / 12), 0.04em);
+    color: #ABABAB;
+}
+
+.contacts-tel {
+@include font (500, 12px, calc(19 / 12), null);
+    color: #131313;
+}
+
+.contacts-email {
+@include font (500, 12px, calc(19 / 12), null);
+    color: #131313;
+}
