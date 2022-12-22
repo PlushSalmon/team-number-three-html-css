@@ -18,14 +18,14 @@
                 <li>
                     <ul class="header__open">
                         <li>
-                            <button type="button" class="open-btn" data-menu-open>
-                                <svg class="header__open-icon" height="32px" width="32px" data-modal-open>
+                            <button type="button" class="nav-open" data-menu-open>
+                                <svg class="header__open-icon" height="32px" width="32px">
                                     <use href="./images/startpage.svg#icon-menu"></use>
                                 </svg>
                             </button>
                         </li>
                         <li>
-                            <button class="header__buy" type="button">
+                            <button class="header__buy" type="button" data-modal-open>
                                 Buy now
                                 <svg height="10px" width="6px">
                                     <use href="./images/startpage.svg#icon-vector"></use>
@@ -53,13 +53,17 @@
             <ul class="hero__descr">
                 <li><span class="icecream_plate"></span></li>
                 <li>
-                    <p class="hero__descr-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        <svg class="hero__descr-svg" height="16px" width="40px">
-                            <use href="./images/startpage.svg#icon-arrow"></use>
-                        </svg>
-                    </p>
+                    <div class="hero__descr-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et                            
+                        </p>
+                        <a href="#">
+                            <svg class="hero__descr-svg" height="16px" width="40px">
+                                <use href="./images/startpage.svg#icon-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
 
                 </li>
             </ul>
@@ -80,3 +84,32 @@
         <span class="hero__dots"></span>
     </div>
 </section>
+
+<div class="mob_menu is-hidden" data-menu>
+    <div class="modal-footer">
+        <svg class="header__logo-icon">
+            <use href="./images/startpage.svg#icon-logo"></use>
+        </svg>
+    
+        <svg class="header__close-icon" data-menu-close>
+            <use href="./images/startpage.svg#icon-headerclose"></use>
+        </svg>
+    </div>
+    <div class="modal-nav">
+        <ul class="header__nav">
+            <li><a class="link" href="#">Home</a></li>
+            <li><a class="link" href="#">How it’s made?</a></li>
+            <li><a class="link" href="#">Our products</a></li>
+            <li><a class="link" href="#">Contact</a></li>
+            <li>
+                <button class=" modal_buy" type="button" data-modal-open>
+                    Buy now
+                    <svg height="10px" width="6px">
+                        <use href="./images/startpage.svg#icon-vector"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+
+    </div>
+</div>
