@@ -28,6 +28,7 @@
 background-color: #F8D24E;
 border-radius: 6px;
 padding: 22px 4px;
+margin-bottom: 20px;
 }
 .contacts-title {
     @include font (500, 12px, calc(14 / 12), 0.04em);
@@ -36,7 +37,7 @@ padding: 22px 4px;
     text-transform: uppercase;
     color: #131313;
     
-    margin-bottom: 20px;
+    
 
     @include tablet {
         @include font (500, 16px, calc(22 / 16), 0.04em);
