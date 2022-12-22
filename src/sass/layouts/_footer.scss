@@ -100,6 +100,7 @@
         margin-bottom: 40px;
         @include tablet {
             @include font (700, 14px, calc(26 / 14), null);
+            min-width: 285px;
         }
         @include desktop {
             @include font (700, 16px, calc(30 / 16), 0.02em);
