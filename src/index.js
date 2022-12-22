@@ -17,6 +17,8 @@
 
 // -----Modal Window-----
 
+// -----Slider-----
+
 setInterval(() => {
 	let $curr = document.querySelector('#slider1 input[type=radio]:checked'),
   		$next = $curr.nextSibling;
@@ -26,3 +28,5 @@ setInterval(() => {
   }
   $next.setAttribute('checked', true);
 }, 3000);
+
+// -----Slider-----
