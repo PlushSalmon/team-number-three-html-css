@@ -39,6 +39,7 @@
     color: #FCFCFC;
     @include tablet {
         @include font (700, 48px, calc(59 / 48), 0.06em);
+        max-width: 352px;
     }
     @include desktop {
         @include font (700, 58px, calc(71 / 58), 0.06em);
