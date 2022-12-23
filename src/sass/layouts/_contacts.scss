@@ -24,21 +24,23 @@
         height: 542px;
     }
 }
+
 .dicor-contacts-title {
-display: inline-block;
-background-color: #F8D24E;
-border-radius: 6px;
-padding: 4px 22px;
-margin-bottom: 20px;
+    display: inline-block;
+    background-color: #F8D24E;
+    border-radius: 6px;
+    padding: 4px 22px;
+    margin-bottom: 20px;
 }
+
 .contacts-title {
     @include font (500, 12px, calc(14 / 12), 0.04em);
     text-align: center;
     align-items: center;
     text-transform: uppercase;
     color: #131313;
-    
-    
+
+
 
     @include tablet {
         @include font (500, 16px, calc(22 / 16), 0.04em);
@@ -96,6 +98,7 @@ margin-bottom: 20px;
 .contacts-time {
     @include font (500, 12px, calc(22 / 12), null);
     color: #ABABAB;
+
     &:not(:last-child) {
         margin-bottom: 8px;
     }
@@ -135,4 +138,38 @@ margin-bottom: 20px;
     @include desctop {
         @include font (500, 16px, calc(24 / 16), null);
     }
+}
+
+.btn-frst {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 164px;
+    min-height: 42px;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #F8D24E;
+    background-color: #F8D24E;
+    color: #131313;
+    outline: none;
+    translate: all 0.3s ease-in;
+    transition-delay: 0.15s;
+    @include font(600, 14px, 1.28, normal);
+}
+
+.btn-scnd {
+    display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 164px;
+        min-height: 42px;
+        padding: 12px;
+        background-color: transparent;
+        color: #131313;
+        outline: none;
+        translate: all 0.3s ease-in;
+        transition-delay: 0.15s;
+        border: 2px solid #F8D24E;
+        border-radius: 10px;
+        @include font(600, 14px, 1.28, normal);
 }
