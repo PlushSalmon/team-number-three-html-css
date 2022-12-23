@@ -140,6 +140,11 @@
     }
 }
 
+.btn-flex {
+    display: flex;
+    flex-direction: column;
+}
+
 .btn-frst {
     display: inline-flex;
     justify-content: center;
