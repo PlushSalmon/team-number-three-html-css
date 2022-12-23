@@ -143,6 +143,18 @@
 .btn-flex {
     display: flex;
     flex-direction: column;
+    padding-left: 62px;
+    padding-right: 62px;
+    gap: 16px;
+    @include tablet {
+            padding-left: 180px;
+                padding-right: 180px;
+                flex-direction: row;
+    }
+    @include desctop {
+        padding-left: 396px;
+            padding-right: 396px;
+    }
 }
 
 .btn-frst {
