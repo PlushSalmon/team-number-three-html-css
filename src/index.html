@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script type="module" src="./index.js"></script>
   <link rel="stylesheet" href="./sass/index.scss" />
   
@@ -25,6 +26,29 @@
   <include src="./partials/costomer-reviews.html"></include>
   <include src="./partials/contacts.html"></include>
   <include src="./partials/footer.html"></include>
+  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper', {
+      // effect: "fade",
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>  
+  <script>
+    $(document).ready(function () {
+      PopUpHide();
+    });
+    function PopUpShow() {
+      $("#popup-products").show();
+    }
+    function PopUpHide() {
+      $("#popup-products").hide();
+    }
+  </script>
 </body>
 
 </html>
