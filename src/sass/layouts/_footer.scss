@@ -1,3 +1,9 @@
+.container-conp-padding {
+    @include desctop {
+    padding-left: 16px;
+        padding-right: 16px;
+    }
+}
 .footer-container {
     padding-bottom: 0;
 
