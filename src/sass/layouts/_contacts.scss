@@ -178,6 +178,11 @@
     translate: all 0.3s ease-in;
     transition-delay: 0.15s;
     @include font(600, 14px, 1.28, normal);
+    &:hover,
+    &:focus {
+        background-color:#0A8817 ;
+        border: 1px solid #0A8817;
+    }
 }
 
 .btn-scnd {
@@ -195,4 +200,9 @@
         border: 2px solid #F8D24E;
         border-radius: 10px;
         @include font(600, 14px, 1.28, normal);
+            &:hover,
+                &:focus {
+                    background-color: #0A8817;
+                    border: 1px solid #0A8817;
+                }
 }
