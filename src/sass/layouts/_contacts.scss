@@ -151,15 +151,20 @@
     padding-left: 62px;
     padding-right: 62px;
     gap: 16px;
+
+    padding-top: 935px;
+
     @include tablet {
             padding-left: 180px;
                 padding-right: 180px;
                 flex-direction: row;
                 justify-content: center;
+            padding-top: 278px;
     }
     @include desctop {
         padding-left: 396px;
             padding-right: 396px;
+        padding-top: 474px;
     }
 }
 
@@ -195,4 +200,27 @@
         border: 2px solid #F8D24E;
         border-radius: 10px;
         @include font(600, 14px, 1.28, normal);
+}
+
+
+
+.container-pos {
+    position: relative;
+
+}
+
+.container-pos-address {
+    position: absolute;
+        top: 269px;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    @include tablet {
+        top: 50px;
+    }
+
+    @include desctop {
+        top: 240px;
+    }
 }
