@@ -166,3 +166,26 @@
     margin-bottom: 20px;
   }
 }
+
+.swiper {
+  width: auto;
+  height: auto;
+  padding-bottom: 30px;
+
+  @media screen and (min-width:768px) {
+    padding-bottom: 38px;
+  }
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #84A178;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0px;
+}
+
+span.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
