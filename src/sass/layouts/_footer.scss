@@ -152,7 +152,12 @@
 .footer-link-tel {
     color: #FCFCFC;
 }
-
+.foot-comp-descwrap {
+    @include desctop {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
 .footer-company-container {
     border-top: 1px solid #E1E1E1;
 }
