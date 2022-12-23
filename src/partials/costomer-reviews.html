@@ -1,34 +1,63 @@
 <!--Review-page-->
 <section class="section review__page">
-
-  <div class="container container__banner">
-    <h2 class="visually-hidden">Відгуки клієнтів</h2>
-    <ul class="owl-carousel slider-box">
-      <li><img class="review__image" src="./images/review/icecream-reviews-slider1.png" alt="icecream"></li>
-      <li><img class="review__image" src="./images/review/icecream-reviews-slider2.jpeg" alt="icecream"></li>
-      <li><img class="review__image" src="./images/review/icecream-reviews-slider3.jpg" alt="icecream"></li>
-    </ul>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel();
-      });
-    </script>
+  <div class="container-gallery">
+    <div class="itc-slider itc-slider-1" data-autoplay="true" data-interval="5000" data-loop="true"
+      data-slider="itc-slider">
+      <div class="itc-slider__wrapper">
+        <div class="itc-slider__items">
+          <div class="itc-slider__item">
+            <img src="./images/review/icecream-reviews-slider1.png" width="1013" alt="Ice cream">
+          </div>
+          <div class="itc-slider__item">
+            <img src="./images/review/icecream-reviews-slider2.jpeg" width="1013" alt="Ice cream">
+          </div>
+          <div class="itc-slider__item">
+            <img src="./images/review/icecream-reviews-slider3.jpg" width="1013" alt="Ice cream">
+          </div>
+        </div>
+      </div>
+      <ol class="itc-slider__indicators">
+        <li class="itc-slider__indicator" data-slide-to="0"></li>
+        <li class="itc-slider__indicator" data-slide-to="1"></li>
+        <li class="itc-slider__indicator" data-slide-to="2"></li>
+      </ol>
+    </div>
   </div>
 
   <div class="container container__review">
-    <div class="container__slider">
-      <img class="review__photo" src="./images/review/icecream-reviews-client.jpg" alt="photo__client" width="85">
-      <p class="review__text">I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
-        addition, you have
-        beautiful
-        serving, cozy atmosphere and polite staff.
-      </p>
-      <h3 class="review__title">Emily, Los Angeles</h3>
-      <!-- <ul class="review__point">
-        <li class="review__item"></li>
-        <li class="review__item"></li>
-        <li class="review__item"></li>
-      </ul> -->
+    <div class="itc-slider itc-slider-2" data-autoplay="true" data-interval="7000" data-loop="true"
+      data-slider="itc-slider">
+      <div class="itc-slider__wrapper">
+        <div class="itc-slider__items">
+          <div class="itc-slider__item">
+            <img class="review__photo" src=".images/review/icecream-reviews-client.jpg" alt="photo__client" width="85">
+            <p class="review__text">I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles!
+              In
+              addition, you have beautiful
+              serving, cozy atmosphere and polite staff.</p>
+            <h3 class="review__title">Emily, Los Angeles</h3>
+          </div>
+          <div class="itc-slider__item">
+            <img class="review__photo" src=".images/review/icecream-reviews-client2.jp" alt="photo__client" width="85">
+            <p class="review__text">Every day we come to you with friends after classes in college. We love your ice
+              cream
+              and casual atmosphere!</p>
+            <h3 class="review__title">Bryan, New-York</h3>
+          </div>
+          <div class="itc-slider__item">
+            <img class="review__photo" src=".images/review/icecream-reviews-client3.jp" alt="photo__client" width="85">
+            <p class="review__text">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like
+              the excellent service - always
+              served politely and quickly!</p>
+            <h3 class="review__title">Diana, Chicago</h3>
+          </div>
+        </div>
+      </div>
+      <ol class="itc-slider__indicators">
+        <li class="itc-slider__indicator" data-slide-to="0"></li>
+        <li class="itc-slider__indicator" data-slide-to="1"></li>
+        <li class="itc-slider__indicator" data-slide-to="2"></li>
+      </ol>
     </div>
   </div>
 </section>

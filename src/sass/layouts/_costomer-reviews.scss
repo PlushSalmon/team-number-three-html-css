@@ -25,15 +25,32 @@
   position: relative;
 }
 
-.container__review {
-  display: block;
-  width: 100%;
+.container-gallery {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 1200px;
-  min-width: 320px;
-  position: relative;
+  width: 320px;
+  padding: 0 20px 94px 20px;
+  @include tablet {
+    width: 768px;
+    padding: 0 32px 94px 20px;
+  }
+  @include desctop {
+    width: 1200px;
+    padding: 0 93px 94px 94px;
+  }
+}
+
+.container__review {
+  margin: 0 auto;
+  width: 320px;
+  padding: 50 20px 40px 20px;
+  @include tablet {
+    width: 768px;
+    padding: 50 32px 50px 32px;
+  }
+  @include desctop {
+    width: 1200px;
+    padding: 70 116px 70px 117px;
+  }
 }
 
 .slider-box {
@@ -73,94 +90,69 @@
 // }
 
 .review__photo {
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 32px;
-  border-radius: 50%;
+  // align-items: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-bottom: 32px;
+  // border-radius: 50%;
   width: 85px;
-  @include mobile {
-    margin-top: 178px;
-  }
-  @include tablet {
-    margin-top: 283px;
-  }
-  @include desctop {
-    margin-top: 464px;
-  }
+  margin: 0 auto 32px auto;
+
+  // @include mobile {
+  //   margin-top: 178px;
+  // }
+  // @include tablet {
+  //   margin-top: 283px;
+  // }
+  // @include desctop {
+  //   margin-top: 464px;
+  // }
 }
 
 .review__text {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+  background: #84a178;
+  border-radius: 24px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 2.55;
+  line-height: 255%;
   text-align: center;
-  color: #fcfcfc;
-  background-color: #84a178;
-  border-radius: 10px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding-right: 39px;
-  padding-left: 39px;
   margin-bottom: 32px;
-  margin-top: 0px;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  @include mobile {
-    width: 280px;
-    height: 256px;
-  }
-  @include tablet {
-    width: 705px;
-    height: 138px;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+  padding: 35px 39px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-weight: 500;
     font-size: 14px;
+    line-height: 186%;
+    text-align: center;
+    padding: 28px 80px 29px 80px;
   }
-  @include desctop {
-    width: 968px;
-    height: 138px;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
     font-size: 16px;
+    line-height: 186%;
+    padding: 43px 74px 41px 73px;
   }
 }
 
 .review__title {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.86;
+  font-size: 20px;
+  line-height: 186%;
   text-align: center;
   color: #131313;
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-.review__point {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-}
-
-.review__item {
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-
-  &:hover,
-  &:focus,
-  &.current {
-    background-color: #84a178;
+  margin-bottom: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 16px;
+    line-height: 186%;
+    margin-bottom: 20px;
   }
-}
 
-.review__item:first-child {
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  background-color: #84a178;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 186%;
+    margin-bottom: 20px;
+  }
 }
