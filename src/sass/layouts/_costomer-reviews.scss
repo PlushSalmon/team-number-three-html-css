@@ -166,17 +166,24 @@
     margin-bottom: 20px;
   }
 }
-<<<<<<< Updated upstream
-=======
 
 .swiper {
   width: auto;
   height: auto;
   padding-bottom: 30px;
+  top: -32px;
 
-  @media screen and (min-width:768px) {
-    padding-bottom: 38px;
-  }
+    @include tablet {
+        width: 704px;
+        top: -144px;
+        padding-bottom: 38px;
+      }
+    
+      @include desctop {
+        width: 1013px;
+        top: -35px;
+        padding-bottom: 38px;
+      }
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
