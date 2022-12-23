@@ -1,4 +1,4 @@
-<section class="header">
+<section class="header" id="header">
     <div class="container_start">
         <nav>
             <ul class="header__placing">
@@ -9,23 +9,23 @@
                 </li>
                 <li>
                     <ul class="header__nav">
-                        <li><a class="link" href="#">Home</a></li>
-                        <li><a class="link" href="#">How it’s made?</a></li>
-                        <li><a class="link" href="#">Our products</a></li>
-                        <li><a class="link" href="#">Contact</a></li>
+                        <li><a class="link" href="#header">Home</a></li>
+                        <li><a class="link" href="#about">How it’s made?</a></li>
+                        <li><a class="link" href="#product">Our products</a></li>
+                        <li><a class="link" href="#contacts">Contact</a></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="header__open">
                         <li>
-                            <button type="button" class="nav-open" data-menu-open>
+                            <button type="button" class="nav-open"  data-modal-open>
                                 <svg class="header__open-icon" height="32px" width="32px">
                                     <use href="./images/startpage.svg#icon-menu"></use>
                                 </svg>
                             </button>
                         </li>
                         <li>
-                            <button class="header__buy" type="button" data-modal-open>
+                            <button class="header__buy" type="button">
                                 Buy now
                                 <svg height="10px" width="6px">
                                     <use href="./images/startpage.svg#icon-vector"></use>
@@ -46,8 +46,8 @@
             <h1 class="hero__title">ice cream<br>made with<br>passion</h1>
 
             <div class="hero__buttons">
-                <a class="products-btn link" href="#">Products</a>
-                <a class="advantages-btn link" href="#">How it’s made?</a>
+                <a class="products-btn link" href="#product">Products</a>
+                <a class="advantages-btn link" href="#about">How it’s made?</a>
             </div>
 
             <ul class="hero__descr">
@@ -58,7 +58,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et                            
                         </p>
-                        <a href="#">
+                        <a href="#gallery">
                             <svg class="hero__descr-svg" height="16px" width="40px">
                                 <use href="./images/startpage.svg#icon-arrow"></use>
                             </svg>
@@ -86,24 +86,24 @@
 </section>
 
 
-<div class="mob_menu is-hidden" data-menu>
+<div class="mob_menu is-hidden" data-modal>
     <div class="modal-footer">
         <svg class="header__logo-icon">
             <use href="./images/startpage.svg#icon-logo"></use>
         </svg>
     
-        <svg class="header__close-icon" data-menu-close>
+        <svg class="header__close-icon" data-modal-close>
             <use href="./images/startpage.svg#icon-headerclose"></use>
         </svg>
     </div>
     <div class="modal-nav">
         <ul class="header__nav">
-            <li><a class="link" href="#">Home</a></li>
-            <li><a class="link" href="#">How it’s made?</a></li>
-            <li><a class="link" href="#">Our products</a></li>
-            <li><a class="link" href="#">Contact</a></li>
+            <li><a class="link" href="#header">Home</a></li>
+            <li><a class="link" href="#about">How it’s made?</a></li>
+            <li><a class="link" href="#product">Our products</a></li>
+            <li><a class="link" href="#contacts">Contact</a></li>
             <li>
-                <button class=" modal_buy" type="button" data-modal-open>
+                <button class=" modal_buy" type="button">
                     Buy now
                     <svg height="10px" width="6px">
                         <use href="./images/startpage.svg#icon-vector"></use>
