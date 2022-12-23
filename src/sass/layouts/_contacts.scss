@@ -3,9 +3,14 @@
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 20px;
 
     @include tablet {
         flex-wrap: nowrap;
+        margin-bottom: 40px;
+    }
+    @include desctop {
+        margin-bottom: 60px;
     }
 }
 
